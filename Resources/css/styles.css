@@ -162,6 +162,7 @@ input[type=submit]:active {
 .ion-social-linkedin,
 .ion-social-github {
   color: #474747;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -179,6 +180,22 @@ input[type=submit]:active {
   color: #000000;
 }
 
+/* Mobile navi */
+
+.mobile-nav-icon {
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i {
+  font-size: 240%;
+  color: #474747;
+}
+
+
+
+
 /* Sticky navi */
 
 .sticky {
@@ -187,12 +204,14 @@ input[type=submit]:active {
   left: 0;
   width: 100%;
   background-color: #adb8c7;
-  box-shadow: 0 2px 2px #a8adb4;
+  -webkit-box-shadow: 0 2px 2px #a8adb4;
+          box-shadow: 0 2px 2px #a8adb4;
   z-index: 9999;
 }
 
 .sticky-nav,
-.main-nav { 
+.main-nav,
+.mobile-nav-icon { 
   margin: 20px 0;
  }
 
